@@ -1,0 +1,897 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOS VILLA TAWANGMANGU - Villa & Glamping Terbaik di Tawangmangu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: {
+                        50: '#f0fdf4',
+                        100: '#dcfce7',
+                        200: '#bbf7d0',
+                        300: '#86efac',
+                        400: '#4ade80',
+                        500: '#22c55e',
+                        600: '#16a34a',
+                        700: '#15803d',
+                        800: '#166534',
+                        900: '#14532d',
+                    }
+                },
+                fontFamily: {
+                    'sans': ['Inter', 'system-ui', 'sans-serif'],
+                }
+            }
+        }
+    };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-xl font-bold text-primary-700">BOS VILLA TAWANGMANGU</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-gray-900 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Beranda</a>
+                        <a href="#properties" class="text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Properti</a>
+                        <a href="#jeep" class="text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Sewa Jeep</a>
+                        <a href="#about" class="text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Tentang</a>
+                        <a href="#contact" class="text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Kontak</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+                <a href="#home" class="text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Beranda</a>
+                <a href="#properties" class="text-gray-700 hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Properti</a>
+                <a href="#jeep" class="text-gray-700 hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Sewa Jeep</a>
+                <a href="#about" class="text-gray-700 hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Tentang</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative">
+        <!-- Beautiful mountain landscape with villa and forest view -->
+        <div class="h-96 bg-gradient-to-r from-primary-800 to-primary-600" style="background-image: linear-gradient(rgba(21, 128, 61, 0.7), rgba(22, 101, 52, 0.7)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center text-white px-4">
+                    <div class="mb-6">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-mountain text-primary-600 text-3xl"></i>
+                        </div>
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4">BOS VILLA TAWANGMANGU</h1>
+                        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Nikmati pengalaman menginap terbaik di villa dan glamping eksklusif dengan pemandangan Gunung Lawu yang memukau</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="bg-white py-8 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl mx-auto">
+                <div class="relative">
+                    <input type="text" id="search-input" placeholder="Cari berdasarkan nama atau fasilitas..." class="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none text-lg">
+                    <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pilihan Akomodasi Terbaik</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Temukan villa dan glamping impian Anda dengan fasilitas lengkap dan pemandangan menakjubkan di Tawangmangu</p>
+            </div>
+            
+            <!-- Property Grid -->
+            <div id="properties-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Properties will be dynamically loaded here -->
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="load-more-btn" class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200" onclick="loadMoreProperties()">
+                    Lihat Lebih Banyak
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jeep Rental Section -->
+    <section id="jeep" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Sewa Jeep Wisata</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Jelajahi keindahan Tawangmangu dengan layanan sewa jeep yang nyaman dan aman</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Jeep rental service card 1 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <!-- Off-road jeep adventure in mountain terrain -->
+                    <img src="https://pixabay.com/get/g36b1a13bbd481cf48cea8df3f8a630f60d15d4172fc22403e7dd925a4c698cb98c9773f214d794c6162a8652ab9aed041f14a1708814a958e7f24eebb7a971df_1280.jpg" alt="Jeep wisata adventure" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Paket Wisata Reguler</h3>
+                    <p class="text-gray-600 mb-4">Nikmati perjalanan wisata dengan jeep yang nyaman ke berbagai destinasi menarik di Tawangmangu</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-primary-600">Mulai Rp 300.000</span>
+                        <button class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">Pesan Sekarang</button>
+                    </div>
+                </div>
+                
+                <!-- Jeep rental service card 2 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <!-- Mountain jeep tour with scenic landscape -->
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" alt="Jeep wisata premium" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Paket Wisata Premium</h3>
+                    <p class="text-gray-600 mb-4">Pengalaman wisata eksklusif dengan guide profesional dan destinasi terbaik di sekitar Gunung Lawu</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-primary-600">Mulai Rp 500.000</span>
+                        <button class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="py-16 bg-primary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mengapa Memilih Kami?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Kami berkomitmen memberikan pengalaman terbaik untuk liburan Anda di Tawangmangu</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-star text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Kualitas Terjamin</h3>
+                    <p class="text-gray-600">Semua properti telah melalui seleksi ketat untuk memastikan kenyamanan dan kebersihan terbaik</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Lokasi Strategis</h3>
+                    <p class="text-gray-600">Dekat dengan berbagai tempat wisata menarik dan pemandangan alam yang memukau</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Pelayanan 24/7</h3>
+                    <p class="text-gray-600">Tim customer service kami siap membantu Anda kapanpun dibutuhkan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Tentang BOS VILLA TAWANGMANGU</h2>
+                    <p class="text-lg text-gray-600 mb-6">Kami adalah penyedia akomodasi terpercaya di Tawangmangu yang telah melayani ribuan tamu dengan pengalaman menginap yang tak terlupakan. Dengan koleksi villa dan glamping terbaik, kami berkomitmen memberikan kenyamanan maksimal bagi setiap tamu.</p>
+                    <p class="text-lg text-gray-600 mb-8">Lokasi strategis di kaki Gunung Lawu memberikan akses mudah ke berbagai destinasi wisata, udara sejuk pegunungan, dan pemandangan alam yang menakjubkan.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary-600 mr-2"></i>
+                            <span class="text-gray-700">50+ Properti Terpilih</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary-600 mr-2"></i>
+                            <span class="text-gray-700">5000+ Tamu Puas</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary-600 mr-2"></i>
+                            <span class="text-gray-700">Rating 4.8/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!-- Beautiful mountain resort with pine forest backdrop -->
+                    <img src="https://pixabay.com/get/g1568db11d284bf298df0720d0ed2fb1a2e94388866da225b155afe657123d3d4d040a0aef24d8d0a36a70be23930d1ac2541291bf7d80de7f87ef43e97284239_1280.jpg" alt="BOS Villa Tawangmangu" class="rounded-xl shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Hubungi Kami</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Siap membantu mewujudkan liburan impian Anda di Tawangmangu</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Telepon</h3>
+                    <p class="text-gray-300">+62 812-3456-7890</p>
+                    <p class="text-gray-300">+62 857-1234-5678</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-whatsapp text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
+                    <p class="text-gray-300">+62 812-3456-7890</p>
+                    <button class="mt-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition-colors">Chat Sekarang</button>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Email</h3>
+                    <p class="text-gray-300">info@bosvillatawangmangu.com</p>
+                    <p class="text-gray-300">booking@bosvillatawangmangu.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-primary-400 mb-4">BOS VILLA TAWANGMANGU</h3>
+                <p class="text-gray-400 mb-4">Pengalaman menginap terbaik di kaki Gunung Lawu</p>
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                </div>
+                <p class="text-gray-500">&copy; 2024 BOS VILLA TAWANGMANGU. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Toggle Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button id="toggle-btn" class="bg-primary-600 hover:bg-primary-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110" onclick="toggleAccommodationType()">
+            <i class="fas fa-home text-xl"></i>
+            <span id="toggle-text" class="ml-2 hidden md:inline">Villa</span>
+        </button>
+    </div>
+
+    <!-- Property Detail Modal -->
+    <div id="property-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-xl max-w-4xl w-full max-h-screen overflow-y-auto">
+                <!-- Modal content will be dynamically loaded here -->
+                <div id="modal-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Data from provided files
+        const villaData = [
+            {
+                "id": "villa-fill&jill",
+                "name": "Villa FJ",
+                "location": "Sekipan, Tawangmangu",
+                "rates": [
+                    { "label": "Weekday", "price": 2000000 },
+                    { "label": "Weekend", "price": 2500000 }
+                ],
+                "units": 1,
+                "facilities": [
+                    "4 Kamar tidur",
+                    "3 Kamar mandi (dengan water heater)",
+                    "Ruang keluarga",
+                    "Free Wifi",
+                    "1 set Karaoke",
+                    "Dapur (magicom, peralatan masak & makan, kompor, kulkas, galon air mineral)",
+                    "Free mie instan",
+                    "Kopi, Gula, Teh",
+                    "Tersedia alat bakaran",
+                    "Rooftop dengan view bukit",
+                    "Kolam renang",
+                    "Dekat dengan kebun strawberry"
+                ],
+                "capacity": "20-25 orang",
+                "notes": [
+                    "Check in jam 14.00",
+                    "Check out jam 12.00",
+                    "Harga sewaktu-waktu bisa berubah",
+                    "Bukan villa bebas",
+                    "Jam malam 23.00 WIB",
+                    "Tidak boleh melanggar hukum dan norma masyarakat",
+                    "DP 30% dari harga"
+                ],
+                "image": "https://github.com/elfarsaf-dev/lawuscape-/blob/main/Gambar/IMG_5830.jpeg?raw=true",
+                "type": "villa"
+            },
+            {
+                id: "villa-dita",
+                name: "Villa DT", 
+                location: "Sekipan, Tawangmangu",
+                rates: [
+                    { label: "Minggu – Kamis", price: 2000000 },
+                    { label: "Jumat", price: 2500000 },
+                    { label: "Sabtu", price: 3000000 }
+                ],
+                units: 1,
+                facilities: [
+                    "4 Kamar tidur",
+                    "3 Kamar mandi",
+                    "Bangunan 2 lantai",
+                    "Free Wi-Fi",
+                    "Kolam renang", 
+                    "Karaoke keluarga",
+                    "TV LED",
+                    "Alat bakar lengkap",
+                    "View perbukitan Sekipan",
+                    "Halaman luas",
+                    "Parkir luas hingga 6 mobil",
+                    "Kitchen set lengkap",
+                    "Alat makan lengkap",
+                    "Free 2 extra bed",
+                    "Free teh, kopi & mie"
+                ],
+                capacity: "Maksimal 25 orang",
+                notes: [
+                    "Check in jam 2 siang",
+                    "Check out jam 12 siang",
+                    "Bukti nikah untuk pasangan", 
+                    "No miras",
+                    "No mesum",
+                    "No drugs"
+                ],
+                image: "https://github.com/elfarsaf-dev/lawuscape-/blob/main/Gambar/IMG_5818.jpeg?raw=true",
+                type: "villa"
+            },
+            {
+                id: "mongkrang-story-cottage",
+                name: "Mongkrang SC",
+                location: "Tawangmangu", 
+                rates: [
+                    { label: "Weekday", price: 500000 },
+                    { label: "Weekend", price: 700000 }
+                ],
+                units: 6,
+                facilities: [
+                    "1 Bed",
+                    "Sofa",
+                    "Karpet tebal",
+                    "TV Android",
+                    "Wi-Fi",
+                    "Teko listrik",
+                    "Kamar mandi dalam",
+                    "Air panas & dingin",
+                    "Kopi dan teh",
+                    "Include sarapan pagi untuk 2 orang",
+                    "View Gunung Lawu"
+                ],
+                capacity: "Maksimal 6 orang",
+                notes: [
+                    "Check in jam 2 siang",
+                    "Check out jam 12 siang",
+                    "Bukti nikah untuk pasangan",
+                    "No miras", 
+                    "No mesum",
+                    "No drugs",
+                    "Super cantik dengan view Gunung Lawu"
+                ],
+                image: "https://github.com/elfarsaf-dev/lawuscape-/blob/main/Gambar/IMG_5815.jpeg?raw=true",
+                type: "villa"
+            }
+        ];
+
+        const glampingData = [
+            {
+                id: "glamping-diyanis",
+                name: "Glamping DYN",
+                location: "Sekipan, Tawangmangu",
+                rates: [
+                    { label: "Weekday - Kolam renang air dingin", price: 500000 },
+                    { label: "Weekday - Kolam renang air hangat", price: 600000 },
+                    { label: "Jumat - Kolam renang air dingin", price: 600000 },
+                    { label: "Jumat - Kolam renang air hangat", price: 700000 },
+                    { label: "Weekend - Kolam renang air dingin", price: 700000 },
+                    { label: "Weekend - Kolam renang air hangat", price: 800000 }
+                ],
+                units: 11,
+                facilities: [
+                    "Smart TV",
+                    "Free Wi-Fi", 
+                    "Kamar mandi air hangat",
+                    "Private pool hangat",
+                    "1 bed besar",
+                    "Dispenser",
+                    "Free mie instan, kopi, gula, teh",
+                    "Dapur mini",
+                    "Perlengkapan masak & makan",
+                    "Free breakfast untuk 2 orang",
+                    "Tempat parkir luas"
+                ],
+                capacity: "2-5 orang",
+                notes: [
+                    "Check in jam 2 siang",
+                    "Check out jam 12 siang", 
+                    "Bukti nikah untuk pasangan",
+                    "No miras",
+                    "No mesum",
+                    "No drugs"
+                ],
+                image: "https://github.com/elfarsaf-dev/lawuscape-/blob/main/Gambar/IMG_5817.jpeg?raw=true",
+                type: "glamping"
+            },
+            {
+                id: "diza-glamping",
+                name: "DZ Glamping",
+                location: "Tawangmangu",
+                rates: [
+                    { label: "Weekday", price: 550000 },
+                    { label: "Jumat", price: 700000 },
+                    { label: "Weekend", price: 800000 }
+                ],
+                units: 5,
+                facilities: [
+                    "Private Pool Air Hangat",
+                    "1 Bed Type Queen Size",
+                    "1 Kamar Mandi Dalam",
+                    "Water Heater",
+                    "Handuk & Amenities",
+                    "Wi-Fi Available",
+                    "Smart TV",
+                    "Kursi Outdoors",
+                    "Mini Kitchen",
+                    "Free Breakfast 2 Pax",
+                    "Free Mineral Water, Gula, Teh & Kopi",
+                    "Area Parkir",
+                    "Free BBQ"
+                ],
+                capacity: "2-4 orang",
+                notes: [
+                    "Check in jam 2 siang",
+                    "Check out jam 12 siang",
+                    "Bukti nikah untuk pasangan",
+                    "No miras",
+                    "No mesum",
+                    "No drugs",
+                    "Price From Owner, No Mark Up",
+                    "Dekat Wisata Buper Pleseran & Telaga Asmara"
+                ],
+                image: "https://github.com/elfarsaf-dev/lawuscape-/blob/main/Gambar/IMG_5827.jpeg?raw=true",
+                type: "glamping"
+            },
+            {
+                id: "zheyuri-glamping",
+                name: "ZHY Glamping",
+                location: "Tawangmangu",
+                rates: [
+                    { label: "Harga start 500K", price: 500000 }
+                ],
+                units: 1,
+                facilities: [
+                    "1 Bed di lantai 2, bawahnya sofa",
+                    "1 Kamar mandi dalam – air hangat, handuk & amenities",
+                    "Wi-Fi available",
+                    "Smart TV",
+                    "Gula, teh & kopi",
+                    "Mini freezer",
+                    "Sofa",
+                    "Mini kitchen",
+                    "Private pool",
+                    "View adem"
+                ],
+                capacity: "2-6 orang",
+                notes: [
+                    "Check in jam 2 siang",
+                    "Check out jam 12 siang",
+                    "Bukti nikah untuk pasangan",
+                    "No miras",
+                    "No mesum",
+                    "No drugs",
+                    "Glamping baru di Tawangmangu dengan view cantik",
+                    "Dekat wisata"
+                ],
+                image: "https://github.com/elfarsaf-dev/lawuscape-/blob/main/Gambar/IMG_5825.jpeg?raw=true",
+                type: "glamping"
+            }
+        ];
+
+        // State management
+        let currentType = 'villa';
+        let currentData = villaData;
+        let displayedCount = 6;
+        let filteredData = [];
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            filteredData = [...currentData];
+            renderProperties();
+            setupSearch();
+        });
+
+        function toggleAccommodationType() {
+            currentType = currentType === 'villa' ? 'glamping' : 'villa';
+            currentData = currentType === 'villa' ? villaData : glampingData;
+            displayedCount = 6;
+            
+            // Update button
+            const toggleBtn = document.getElementById('toggle-text');
+            const toggleIcon = document.querySelector('#toggle-btn i');
+            
+            if (currentType === 'villa') {
+                toggleBtn.textContent = 'Villa';
+                toggleIcon.className = 'fas fa-home text-xl';
+            } else {
+                toggleBtn.textContent = 'Glamping';
+                toggleIcon.className = 'fas fa-campground text-xl';
+            }
+            
+            // Filter and render
+            const searchInput = document.getElementById('search-input');
+            if (searchInput.value.trim()) {
+                filterProperties(searchInput.value);
+            } else {
+                filteredData = [...currentData];
+            }
+            
+            renderProperties();
+        }
+
+        function setupSearch() {
+            const searchInput = document.getElementById('search-input');
+            searchInput.addEventListener('input', function(e) {
+                const query = e.target.value.trim();
+                if (query) {
+                    filterProperties(query);
+                } else {
+                    filteredData = [...currentData];
+                }
+                displayedCount = 6;
+                renderProperties();
+            });
+        }
+
+        function filterProperties(query) {
+            const searchTerm = query.toLowerCase();
+            filteredData = currentData.filter(property => {
+                return property.name.toLowerCase().includes(searchTerm) ||
+                       property.location.toLowerCase().includes(searchTerm) ||
+                       property.facilities.some(facility => 
+                           facility.toLowerCase().includes(searchTerm)
+                       );
+            });
+        }
+
+        function renderProperties() {
+            const grid = document.getElementById('properties-grid');
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            
+            // Clear grid
+            grid.innerHTML = '';
+            
+            // Get properties to display
+            const propertiesToShow = filteredData.slice(0, displayedCount);
+            
+            // Render properties
+            propertiesToShow.forEach(property => {
+                const card = createPropertyCard(property);
+                grid.appendChild(card);
+            });
+            
+            // Update load more button
+            loadMoreBtn.style.display = displayedCount >= filteredData.length ? 'none' : 'inline-block';
+        }
+
+        function createPropertyCard(property) {
+            const card = document.createElement('div');
+            card.className = 'bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300';
+            
+            const minPrice = Math.min(...property.rates.map(rate => rate.price));
+            const formattedPrice = new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(minPrice);
+            
+            card.innerHTML = `
+                <div class="relative">
+                    <img src="${property.image}" alt="${property.name}" class="w-full h-64 object-cover">
+                    <div class="absolute top-4 left-4 bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-medium capitalize">
+                        ${property.type}
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">${property.name}</h3>
+                    <p class="text-gray-600 mb-3 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-2 text-primary-600"></i>
+                        ${property.location}
+                    </p>
+                    <p class="text-gray-600 mb-3 flex items-center">
+                        <i class="fas fa-users mr-2 text-primary-600"></i>
+                        ${property.capacity}
+                    </p>
+                    <div class="mb-4">
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            ${property.facilities.slice(0, 3).map(facility => 
+                                `<span class="bg-gray-100 text-gray-700 px-2 py-1 rounded-md text-xs">${facility}</span>`
+                            ).join('')}
+                            ${property.facilities.length > 3 ? 
+                                `<span class="bg-gray-100 text-gray-700 px-2 py-1 rounded-md text-xs">+${property.facilities.length - 3} lainnya</span>` : 
+                                ''
+                            }
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-bold text-primary-600">${formattedPrice}</span>
+                            <span class="text-gray-600 text-sm">/malam</span>
+                        </div>
+                        <button onclick="showPropertyDetail('${property.id}')" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        function loadMoreProperties() {
+            displayedCount += 6;
+            renderProperties();
+        }
+
+        function showPropertyDetail(propertyId) {
+            // Find property from current data
+            const property = currentData.find(p => p.id === propertyId);
+            if (!property) return;
+            
+            const modal = document.getElementById('property-modal');
+            const modalContent = document.getElementById('modal-content');
+            
+            // Generate image slider (using 6 placeholder images since we only have 1 image per property)
+            const sliderImages = [
+                property.image,
+                'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600',
+                'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600',
+                'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600',
+                'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600',
+                'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600'
+            ];
+            
+            modalContent.innerHTML = `
+                <div class="relative">
+                    <button onclick="closeModal()" class="absolute top-4 right-4 z-10 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 transition-all">
+                        <i class="fas fa-times text-gray-600"></i>
+                    </button>
+                    
+                    <!-- Image Slider -->
+                    <div class="relative h-96">
+                        <div id="image-slider" class="h-full">
+                            ${sliderImages.map((img, index) => `
+                                <img src="${img}" alt="${property.name} ${index + 1}" class="w-full h-full object-cover ${index === 0 ? '' : 'hidden'}" data-slide="${index}">
+                            `).join('')}
+                        </div>
+                        <button onclick="prevSlide()" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 transition-all">
+                            <i class="fas fa-chevron-left text-gray-600"></i>
+                        </button>
+                        <button onclick="nextSlide()" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 transition-all">
+                            <i class="fas fa-chevron-right text-gray-600"></i>
+                        </button>
+                        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                            ${sliderImages.map((_, index) => `
+                                <button onclick="goToSlide(${index})" class="w-3 h-3 rounded-full ${index === 0 ? 'bg-white' : 'bg-white bg-opacity-50'}" data-dot="${index}"></button>
+                            `).join('')}
+                        </div>
+                    </div>
+                    
+                    <!-- Property Details -->
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <div>
+                                <h2 class="text-3xl font-bold text-gray-900">${property.name}</h2>
+                                <p class="text-lg text-gray-600 flex items-center mt-2">
+                                    <i class="fas fa-map-marker-alt mr-2 text-primary-600"></i>
+                                    ${property.location}
+                                </p>
+                            </div>
+                            <div class="bg-primary-600 text-white px-4 py-2 rounded-full text-sm font-medium capitalize">
+                                ${property.type}
+                            </div>
+                        </div>
+                        
+                        <!-- Capacity -->
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Kapasitas</h3>
+                            <p class="text-gray-600 flex items-center">
+                                <i class="fas fa-users mr-2 text-primary-600"></i>
+                                ${property.capacity}
+                            </p>
+                        </div>
+                        
+                        <!-- Rates -->
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Harga</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                ${property.rates.map(rate => `
+                                    <div class="bg-gray-50 p-4 rounded-lg">
+                                        <p class="font-medium text-gray-900">${rate.label}</p>
+                                        <p class="text-lg font-bold text-primary-600">${new Intl.NumberFormat('id-ID', {
+                                            style: 'currency',
+                                            currency: 'IDR',
+                                            minimumFractionDigits: 0,
+                                            maximumFractionDigits: 0
+                                        }).format(rate.price)}</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                        
+                        <!-- Facilities -->
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Fasilitas</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                ${property.facilities.map(facility => `
+                                    <div class="flex items-center">
+                                        <i class="fas fa-check text-primary-600 mr-2"></i>
+                                        <span class="text-gray-700">${facility}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                        
+                        <!-- Notes -->
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Syarat & Ketentuan</h3>
+                            <ul class="space-y-1">
+                                ${property.notes.map(note => `
+                                    <li class="flex items-start">
+                                        <i class="fas fa-info-circle text-primary-600 mr-2 mt-1 text-sm"></i>
+                                        <span class="text-gray-700">${note}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button class="flex-1 bg-primary-600 hover:bg-primary-700 text-white py-3 px-6 rounded-lg font-medium transition-colors">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                Pesan via WhatsApp
+                            </button>
+                            <button class="flex-1 bg-gray-600 hover:bg-gray-700 text-white py-3 px-6 rounded-lg font-medium transition-colors">
+                                <i class="fas fa-phone mr-2"></i>
+                                Hubungi Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
+            currentSlide = 0;
+        }
+
+        let currentSlide = 0;
+
+        function nextSlide() {
+            const slides = document.querySelectorAll('#image-slider img');
+            const dots = document.querySelectorAll('[data-dot]');
+            
+            slides[currentSlide].classList.add('hidden');
+            dots[currentSlide].classList.remove('bg-white');
+            dots[currentSlide].classList.add('bg-white', 'bg-opacity-50');
+            
+            currentSlide = (currentSlide + 1) % slides.length;
+            
+            slides[currentSlide].classList.remove('hidden');
+            dots[currentSlide].classList.remove('bg-white', 'bg-opacity-50');
+            dots[currentSlide].classList.add('bg-white');
+        }
+
+        function prevSlide() {
+            const slides = document.querySelectorAll('#image-slider img');
+            const dots = document.querySelectorAll('[data-dot]');
+            
+            slides[currentSlide].classList.add('hidden');
+            dots[currentSlide].classList.remove('bg-white');
+            dots[currentSlide].classList.add('bg-white', 'bg-opacity-50');
+            
+            currentSlide = currentSlide === 0 ? slides.length - 1 : currentSlide - 1;
+            
+            slides[currentSlide].classList.remove('hidden');
+            dots[currentSlide].classList.remove('bg-white', 'bg-opacity-50');
+            dots[currentSlide].classList.add('bg-white');
+        }
+
+        function goToSlide(index) {
+            const slides = document.querySelectorAll('#image-slider img');
+            const dots = document.querySelectorAll('[data-dot]');
+            
+            slides[currentSlide].classList.add('hidden');
+            dots[currentSlide].classList.remove('bg-white');
+            dots[currentSlide].classList.add('bg-white', 'bg-opacity-50');
+            
+            currentSlide = index;
+            
+            slides[currentSlide].classList.remove('hidden');
+            dots[currentSlide].classList.remove('bg-white', 'bg-opacity-50');
+            dots[currentSlide].classList.add('bg-white');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('property-modal');
+            modal.classList.add('hidden');
+        }
+
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('property-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
