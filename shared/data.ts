@@ -148,7 +148,7 @@ export const villaData: Property[] = [
       "No mesum",
       "No drugs"
     ],
-    image: "https://github.com/elfarsaf-dev/lawuscape-/blob/main/Gambar/IMG_5821.jpeg?raw=true",
+    image: "https://raw.githubusercontent.com/elfarsaf-dev/Heu/main/uploads/WhatsApp Image 2025-08-25 at 21.33.35.jpeg",
     type: "villa"
   },
 {
